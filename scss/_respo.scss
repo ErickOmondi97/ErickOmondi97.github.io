@@ -1,0 +1,100 @@
+@media screen and (max-width:968px){
+  .nav__menu{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: $body-color;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    border-radius: 1rem 1rem 0 0;
+    z-index: map-get($z-indeces, z-fixed);
+    @include transition-ease
+
+  }
+}
+
+//for small devices the menu will display two columns
+@media screen and (max-width: 320px){
+  .nav__list{
+    grid-template-columns: PaymentRequestUpdateEvent(2, 1fr);
+    gap: 1rem 0.5rem;
+  }
+}
+
+//for large screens
+@media screen and (min-width: 968px){
+  body {
+    margin: 3rem 0;
+  }
+
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .l-header, .scrolltop {
+    display: none;
+  }
+
+  .resume {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    background-color: $container-color;
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+    //margin-left: 300px;
+    margin-right: -250px;
+    margin-left: 125px;
+
+    &__left {
+      background-color: $container-color-alt;
+    }
+
+    &__left, &__right {
+      padding: 1.5rem 1.5rem;
+    }
+
+
+    .section-title, .profile_description {
+      text-align: initial;
+    }
+  }
+  
+  .generate-pdf {
+    display: inline-block;
+  }
+
+  .home {
+    &__container {
+      gap: 1.5rem;
+    }
+
+    &__btn-movil {
+      display: none;
+    }
+  }
+
+  .referees {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .languages {
+    &__content {
+      grid-template-columns: repeat(3, max-content);
+      column-gap: 3.5rem;
+    }
+  }
+
+  .interests {
+    &__container {
+      grid-template-columns: repeat(1, max-content);
+      column-gap: 3.5rem;
+
+      i {
+        align-items: center;
+      }
+    }
+  }
+}

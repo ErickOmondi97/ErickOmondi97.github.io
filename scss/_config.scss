@@ -1,0 +1,68 @@
+@mixin transition-ease{
+  transition: all 0.3s ease-in-out;
+}
+
+$header-height: 3rem;
+
+//colors
+$title-color: #0B0A0A;
+$text-color: #403A3A;
+$text-color-light: #707070;
+$container-color: #FAFAFA;
+$body-color: #FCFCFC;
+$container-color-alt: #F0EFEF;
+
+//font and topography
+$body-font: 'Poppins', sans-serif;
+
+$h-font-sizes: (
+"h1-font-size": 1.5rem,
+"h2-font-size": 1.25rem,
+"h3-font-size": 1rem
+);
+
+$text-font-sizes: (
+"normal-font-size": 0.938rem,
+"small-font-size": 0.875rem,
+"smaller-font-size": 0.813rem
+);
+
+//font weights
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600
+);
+
+//Margenes
+$margenes: (
+  "mb-1": 0.5rem,
+  "mb-2": 1rem,
+  "mb-3": 1.5rem
+);
+
+//z-index
+$z-indeces: (
+  "z-tooltip": 10,
+  "z-fixed": 100
+);
+
+
+//font size variable for scaling the resume
+$body-scale-resume:(
+"h1-font-size": 0.938rem,
+"h2-font-size": 0.938rem,
+"h3-font-size": 0.875rem,
+"normal-font-size": 0.813rem,
+"small-font-size": 0.75rem,
+"smaller-font-size": 0.688rem
+);
+
+//change variables for dark theme
+$body-dark-theme:(
+  "title-color": #F2F2F2,
+  "text-color": #BFBFBF,
+  "container-color": #212121,
+  "container-color-alt": #181616,
+  "body-color": #2B2B2B
+);

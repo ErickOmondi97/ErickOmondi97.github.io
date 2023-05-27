@@ -1,0 +1,6 @@
+.certificate {
+  &__title {
+    font-size: map-get($h-font-sizes, h3-font-size);
+    margin-bottom: map-get($margenes, mb-1);
+  }
+}

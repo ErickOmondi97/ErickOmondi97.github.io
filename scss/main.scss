@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@400;500;600&display=swap');
+@import './config';
+@import './respo';
+@import './menu';
+@import './home';
+@import './social';
+@import './profile';
+@import './edu';
+@import './layout';
+@import './skills';
+@import './certificates';
+@import './experience';
+@import './referees';
+@import './languages';
+@import './interests';
+@import './scrolltop';
+@import './button';
+@import './darktheme';
+@import './scale';
+
+
+*, ::before,::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  //margin: 0 0 $header-height 0;
+  padding: 0;
+  font-family: $body-font;
+  font-size: map-get($text-font-sizes, normal-font-size);
+  background-color: $body-color;
+  color: $text-color;
+  margin-bottom: 100px;
+}
+
+h1,h2,h3,ul,p {
+  margin: 0;
+}
+
+h1,h2,h3 {
+  color: $title-color;
+  font-weight: map-get($font-weights, medium);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+.section{
+  padding: 1.5rem 0;
+
+  &-title{
+    font-size: map-get($h-font-sizes, h2-font-size);
+    color: $title-color;
+    font-weight: map-get($font-weights, semi-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    text-align: center;
+    margin-bottom: map-get($margenes, mb-3)
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

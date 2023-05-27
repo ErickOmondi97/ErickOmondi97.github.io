@@ -1,0 +1,30 @@
+.referees {  
+  &__content {
+    gap: 0.25rem;
+    line-height: 22px;
+  }
+
+  &__subtitle {
+    color: $text-color-light;
+  }
+
+  &__subtitle, &__contact {
+    font-size: map-get($text-font-sizes, smaller-font-size);
+  }
+
+  &__title {
+    font-size: map-get($h-font-sizes, h3-font-size);
+  }
+
+  &__contact{
+    a {
+      color: $text-color-light;
+      @include transition-ease;
+
+      &:hover {
+        color: $text-color;
+        font-size: 16px;
+      }
+    }
+  }
+}

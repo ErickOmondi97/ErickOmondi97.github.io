@@ -1,0 +1,67 @@
+body.dark-theme {
+  color: map-get($body-dark-theme, text-color);
+  background-color: map-get($body-dark-theme, body-color);
+
+  .resume {
+    background-color: map-get($body-dark-theme, body-color);
+
+    &__left {
+      background-color: map-get($body-dark-theme, body-color);
+    }
+  }
+
+  .bd-container{
+    background-color: map-get($body-dark-theme, container-color);
+  }
+
+  .l-header {
+    background-color: map-get($body-dark-theme, container-color);
+  }
+
+  section-title {
+    color: map-get($body-dark-theme, title-color);
+  }
+
+  h1,h2,h3 {
+    color: map-get($body-dark-theme, title-color);
+  }
+
+  a {
+    color: map-get($body-dark-theme, text-color);
+
+    &:hover {
+      color: map-get($body-dark-theme, title-color);
+      @include transition-ease;
+    }
+  }
+
+  .education {
+    &__studies {
+      color: map-get($body-dark-theme, text-color);
+    }
+  }
+
+  .experience__circle {
+    color: map-get($body-dark-theme, title-color);
+  }
+
+  i {
+    color: map-get($body-dark-theme, text-color);
+  }
+
+  .nav__menu {
+    background-color: map-get($body-dark-theme, body-color);
+  }
+
+  .referees__subtitle {
+    color: map-get($body-dark-theme, title-color);
+  }
+}
+
+/* $body-dark-theme:(
+  "title-color": #F2F2F2,
+  "text-color": #BFBFBF,
+  "container-color": #212121,
+  "container-color-alt": #181616,
+  "body-color": #2B2B2B
+); */

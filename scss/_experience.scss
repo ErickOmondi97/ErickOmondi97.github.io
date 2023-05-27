@@ -1,0 +1,59 @@
+.experience {  
+  &__content {
+    display: flex;
+  }
+
+  &__time {
+    padding-left: 0.5rem;
+  }
+
+  &__rounder, &__line {
+  margin-left: -5%;
+  }
+
+  &__rounder {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: $text-color-light;
+    border-radius: 50%;
+    margin-top: -1rem;
+  }
+
+  &__line {
+    display: block;
+    width: 2px;
+    height: 104%;
+    background-color: $text-color-light;
+    transform: translate(7px, 0);
+
+  }
+
+  &__circle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: $text-color-light;
+    border-radius: 50%;
+    //margin-left: -125px;
+  }
+
+  &__data {
+    gap: 0.5rem;
+    line-height: 30px;
+  }
+
+  &__title {
+    font-size: map-get($h-font-sizes, h3-font-size);
+  }
+
+  &__studies {
+    font-size: map-get($text-font-sizes, small-font-size);
+    color: $title-color;
+  }
+
+  &__year {
+    font-size: map-get($text-font-sizes, smaller-font-size);
+  }
+}

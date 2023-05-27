@@ -1,0 +1,24 @@
+.social {
+  &__container {
+    grid-template-columns: max-content;
+    gap: 1rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: map-get($text-font-sizes, small-font-size);
+    color: $text-color;
+    @include transition-ease;
+
+    &:hover {
+      color: $title-color;
+      font-size: 16px;
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    margin-right: 0.25rem ;
+  }
+}

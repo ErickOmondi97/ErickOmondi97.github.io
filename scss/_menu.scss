@@ -1,0 +1,50 @@
+.show-menu{
+  bottom: $header-height;
+}
+
+.active-link{
+  color: $title-color;
+}
+
+.nav{
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  
+  &__logo, &__toggle{
+    color: $title-color;
+    font-weight: map-get($font-weights, medium);
+  }
+
+  &__toggle {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__link{
+    display: flex;
+    flex-direction: column;
+    font-size: map-get($text-font-sizes, smaller-font-size);
+    color: $text-color-light;
+    font-weight: map-get($font-weights, medium);
+
+    &:hover {
+      color: $title-color;
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    margin-bottom: map-get($margenes, mb-1);
+  }
+}

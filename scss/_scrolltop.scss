@@ -1,0 +1,23 @@
+.scrolltop {
+position: fixed;
+right: 1rem;
+bottom: -20%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.3rem;
+background-color: $container-color-alt;
+border-radius: 0.4rem;
+z-index: map-get($z-indeces, z-tooltip);
+@include transition-ease;
+
+&__icon {
+  font-size: 1.2rem;
+  color: $text-color;
+}
+}
+
+.show-scroll {
+  visibility: visible;
+  bottom: 5rem;
+}

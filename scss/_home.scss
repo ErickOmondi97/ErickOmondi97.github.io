@@ -1,0 +1,74 @@
+.home {
+  position: relative;
+
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    gap: 0.5rem;
+    text-align: center;
+
+    img {
+      width: 150px;
+      height: 120px;
+      border-radius: 50%;
+      justify-self: center;
+      margin-bottom: map-get($margenes, mb-1);  
+    }
+  }
+
+  &__title {
+    font-size: map-get($h-font-sizes, h1-font-size);
+  }
+  
+  &__profession {
+    font-size: map-get($text-font-sizes,normal-font-size);
+    margin-bottom: map-get($margenes, mb-1);
+  }
+
+  &__address{
+    gap: 1rem;
+
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: $title-color;
+      }
+    }
+  }
+
+  &__information {
+    display: flex;
+    align-items: center;
+    font-size: map-get($text-font-sizes, small-font-size);
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    margin-right: 0.25rem;
+    color: $text-color;
+
+    &:hover {
+      color: $title-color;
+    }
+  }
+
+  &__btn-movil {
+    display: inline-block;
+    border: 2px solid $text-color;
+    color: $title-color;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    @include transition-ease;
+    font-weight: map-get($font-weights, medium);
+    margin-top: map-get($margenes, mb-3);
+    text-decoration: none;
+
+    &:hover {
+      background-color: $text-color;
+      color: $container-color;
+    }
+  }
+}

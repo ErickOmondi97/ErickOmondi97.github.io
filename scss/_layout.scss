@@ -1,0 +1,24 @@
+.bd{
+  &-container{
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: map-get($margenes, mb-3 );
+  margin-right: map-get($margenes, mb-3 );
+}
+
+&-grid{
+  display: grid;
+  gap: 1.5rem;
+}
+}
+
+.l-header {
+width: 100%;
+position: fixed;
+bottom: 0;
+left: 0;
+z-index: map-get($z-indeces, z-fixed);
+background-color: $body-color;
+box-shadow: 0 -1px 4px rgba(0,0,0,0.1);
+@include transition-ease;
+}

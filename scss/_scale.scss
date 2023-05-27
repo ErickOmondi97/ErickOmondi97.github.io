@@ -1,0 +1,131 @@
+//classes adjusted to reduce size and print size on A4 sheet
+.scale-resume {
+  &.change-theme, &.generate-pdf{
+    display: none;
+  }
+
+  &.bd-container {
+    max-width: 595px;
+  }
+  
+  &.section {
+    padding: 1.5rem 0 0.80rem;
+  }
+
+  &.section-title {
+    margin-bottom: 0.75rem;
+  }
+
+  &.resume__left, &.resume__right {
+    padding: 0 1rem;
+  }
+
+  &.home {
+    &__img {
+      width: 90px;
+      height: 70px;
+    }
+
+    &__container {
+      gap: 1.5rem;
+    }
+
+    &__data {
+      gap: 0.25rem;
+    }
+  
+    &__address {
+      gap: 0.75rem;
+    }
+
+    &__icon {
+      font-size: 1rem;
+    }
+  }
+
+  &.social__container {
+    &__container {
+    gap: 0.75rem;
+    }
+
+    &__icon {
+      font-size: 1rem;
+    }
+  }
+
+  &.interests {
+    &__icon {
+      font-size: 1rem;
+    }
+
+    &__container {
+      column-gap: 2.5rem;
+    }
+  }
+
+  &.education {
+    &__container{
+      gap: 1rem;
+    }
+
+    &__time {
+      padding-right: 0.5rem;
+    }
+
+    &__rounder {
+      width: 11px;
+      height: 11px;
+      margin-top: 0.22rem;
+    }
+
+    &__line {
+      width: 1px;
+      height: 110%;
+      transform: translate(5px, 0);
+    }
+
+    &__data {
+      gap: 0.25rem;
+    }
+  }
+
+  &.experience {
+    &__container{
+      gap: 1rem;
+    }
+
+    &__time {
+      padding-right: 0.5rem;
+    }
+
+    &__rounder {
+      width: 11px;
+      height: 11px;
+      margin-top: 0.22rem;
+    }
+
+    &__line {
+      width: 1px;
+      height: 110%;
+      transform: translate(5px, 0);
+    }
+
+    &__data {
+      gap: 0.25rem;
+    }
+  }
+
+  &.certificate {
+    &__container{
+      gap: 1rem;
+    }
+  }
+
+  &.skills {
+    &__name {
+      margin-bottom: map-get($margenes, mb-1);
+    }
+  }
+
+
+}

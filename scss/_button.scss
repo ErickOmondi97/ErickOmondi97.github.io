@@ -1,0 +1,30 @@
+.change-theme {
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: $text-color-light;
+  font-size: 1.2rem;
+  cursor: pointer;
+  @include transition-ease;
+
+  &:hover {
+    color: $title-color;
+  }
+}
+
+
+.generate-pdf {
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--title-color);
+  }
+}
+
