@@ -30,13 +30,15 @@
   .l-header, .scrolltop {
     display: none;
   }
+  .l-main .resume {
+    margin-left: 125px;
+  }
   .resume {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     background-color: #FAFAFA;
     box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
     margin-right: -250px;
-    margin-left: 125px;
   }
   .resume__left {
     background-color: #F0EFEF;
@@ -496,95 +498,166 @@ body.dark-theme .referees__subtitle {
   "container-color-alt": #181616,
   "body-color": #2B2B2B
 ); */
-.scale-resume.change-theme, .scale-resume.generate-pdf {
+body.scale-resume {
+  font-size: 0.813rem;
+  width: 100%;
+  /* .resume {
+    width: min-content;
+  } */
+}
+body.scale-resume .section-title {
+  font-size: 0.938rem;
+}
+body.scale-resume .change-theme, body.scale-resume .generate-pdf, body.scale-resume .home__btn-movil {
   display: none;
 }
-.scale-resume.bd-container {
+body.scale-resume .bd-container {
   max-width: 595px;
 }
-.scale-resume.section {
+body.scale-resume .section {
   padding: 1.5rem 0 0.8rem;
 }
-.scale-resume.section-title {
+body.scale-resume .section-title {
   margin-bottom: 0.75rem;
 }
-.scale-resume.resume__left, .scale-resume.resume__right {
+body.scale-resume .resume__left, body.scale-resume.resume__right {
   padding: 0 1rem;
 }
-.scale-resume.home__img {
+body.scale-resume .home__title {
+  font-size: 0.938rem;
+}
+body.scale-resume .home__profession {
+  font-size: 0.813rem;
+  margin-bottom: 0.5rem;
+}
+body.scale-resume .home__information {
+  font-size: 0.75rem;
+}
+body.scale-resume .home__img {
   width: 90px;
   height: 70px;
 }
-.scale-resume.home__container {
+body.scale-resume .home__container {
   gap: 1.5rem;
 }
-.scale-resume.home__data {
+body.scale-resume .home__data {
   gap: 0.25rem;
 }
-.scale-resume.home__address {
+body.scale-resume .home__address {
   gap: 0.75rem;
 }
-.scale-resume.home__icon {
+body.scale-resume .home__icon {
   font-size: 1rem;
 }
-.scale-resume.social__container__container {
+body.scale-resume .social__container {
   gap: 0.75rem;
 }
-.scale-resume.social__container__icon {
+body.scale-resume .social__icon {
   font-size: 1rem;
 }
-.scale-resume.interests__icon {
+body.scale-resume .interests__icon {
   font-size: 1rem;
 }
-.scale-resume.interests__container {
+body.scale-resume .interests__container {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
 }
-.scale-resume.education__container {
+body.scale-resume .education__title {
+  font-size: 0.875rem;
+}
+body.scale-resume .education__studies {
+  font-size: 0.75rem;
+}
+body.scale-resume .education__year {
+  font-size: 0.688rem;
+}
+body.scale-resume .education__container {
   gap: 1rem;
 }
-.scale-resume.education__time {
+body.scale-resume .education__time {
   padding-right: 0.5rem;
 }
-.scale-resume.education__rounder {
+body.scale-resume .education__rounder {
   width: 11px;
   height: 11px;
   margin-top: 0.22rem;
 }
-.scale-resume.education__line {
+body.scale-resume .education__line {
   width: 1px;
   height: 110%;
   transform: translate(5px, 0);
 }
-.scale-resume.education__data {
+body.scale-resume .education__data {
   gap: 0.25rem;
 }
-.scale-resume.experience__container {
+body.scale-resume .experience__container {
   gap: 1rem;
 }
-.scale-resume.experience__time {
+body.scale-resume .experience__time {
   padding-right: 0.5rem;
 }
-.scale-resume.experience__rounder {
+body.scale-resume .experience__rounder {
   width: 11px;
   height: 11px;
   margin-top: 0.22rem;
 }
-.scale-resume.experience__line {
+body.scale-resume .experience__line {
   width: 1px;
   height: 110%;
   transform: translate(5px, 0);
 }
-.scale-resume.experience__data {
+body.scale-resume .experience__data {
   gap: 0.25rem;
 }
-.scale-resume.certificate__container {
+body.scale-resume .experience__title {
+  font-size: 0.875rem;
+}
+body.scale-resume .experience__studies {
+  font-size: 0.75rem;
+}
+body.scale-resume .experience__year {
+  font-size: 0.688rem;
+}
+body.scale-resume .certificate__container {
   gap: 1rem;
 }
-.scale-resume.skills__name {
+body.scale-resume .skills__name {
   margin-bottom: 0.5rem;
 }
+body.scale-resume .social__link {
+  font-size: 16pt;
+}
+body.scale-resume .profile_section .section-title {
+  font-size: 16pt;
+}
+body.scale-resume .referees__subtitle, body.scale-resume .referees__contact {
+  font-size: 0.688rem;
+}
+body.scale-resume .referees__title {
+  font-size: 0.875rem;
+}
 
+/* body.scale-resume {
+  font-size: 0.813rem;
+  h1 {
+    font-size: 0.938rem;
+  }
+  h2 {
+    font-size: 0.938rem;
+  }
+  h3 {
+    font-size: 0.875rem;
+  }
+} */
+/* $body-scale-resume:(
+  "h1-font-size": 0.938rem,
+  "h2-font-size": 0.938rem,
+  "h3-font-size": 0.875rem,
+  "normal-font-size": 0.813rem,
+  "small-font-size": 0.75rem,
+  "smaller-font-size": 0.688rem
+  );
+} */
 *, ::before, ::after {
   box-sizing: border-box;
 }
