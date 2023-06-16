@@ -106,12 +106,12 @@ let areaResume = document.getElementById('area-resume')
 let resumeButton = document.getElementById('resume-button')
 
 //html2pdf options
-var opt = {
-  margin:       4,
-  filename:     'myResume.pdf',
+let opt = {
+  margin:       0,
+  filename:     'Erick Omondi\'s Resume.pdf',
   image:        { type: 'jpeg', quality: 0.98 },
   html2canvas:  { scale: 4 },
-  jsPDF:        { format: 'a4', orientation: 'portrait' }
+  jsPDF:        { format: 'a5', orientation: 'portrait'}
 };
 
 
