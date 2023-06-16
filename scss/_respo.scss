@@ -37,14 +37,19 @@
     display: none;
   }
 
+  .l-main {
+    .resume {
+      margin-left: 125px;
+    }
+  }
+
   .resume {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     background-color: $container-color;
     box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
-    //margin-left: 300px;
     margin-right: -250px;
-    margin-left: 125px;
+    //margin-left: 125px;
 
     &__left {
       background-color: $container-color-alt;

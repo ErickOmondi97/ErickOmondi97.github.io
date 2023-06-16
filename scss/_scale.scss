@@ -1,26 +1,52 @@
 //classes adjusted to reduce size and print size on A4 sheet
-.scale-resume {
-  &.change-theme, &.generate-pdf{
+body.scale-resume {
+  font-size: 0.813rem;
+  width: 100%;
+
+  .section{
+    &-title {
+      font-size: 0.938rem;
+    }
+  }
+
+  .change-theme, .generate-pdf, .home__btn-movil{
     display: none;
   }
 
-  &.bd-container {
+  /* .resume {
+    width: min-content;
+  } */
+
+  .bd-container {
     max-width: 595px;
   }
   
-  &.section {
+  .section {
     padding: 1.5rem 0 0.80rem;
   }
 
-  &.section-title {
+  .section-title {
     margin-bottom: 0.75rem;
   }
 
-  &.resume__left, &.resume__right {
+  .resume__left, &.resume__right {
     padding: 0 1rem;
   }
 
-  &.home {
+  .home {
+    &__title {
+      font-size: 0.938rem;
+    }
+    
+    &__profession {
+      font-size: 0.813rem;
+      margin-bottom: map-get($margenes, mb-1);
+    }
+
+    &__information {
+      font-size: 0.75rem;
+    }
+
     &__img {
       width: 90px;
       height: 70px;
@@ -43,7 +69,7 @@
     }
   }
 
-  &.social__container {
+  .social {
     &__container {
     gap: 0.75rem;
     }
@@ -53,7 +79,7 @@
     }
   }
 
-  &.interests {
+  .interests {
     &__icon {
       font-size: 1rem;
     }
@@ -63,7 +89,19 @@
     }
   }
 
-  &.education {
+  .education {
+    &__title {
+      font-size: 0.875rem;
+    }
+  
+    &__studies {
+      font-size: 0.75rem;
+    }
+  
+    &__year {
+      font-size: 0.688rem;
+    }
+
     &__container{
       gap: 1rem;
     }
@@ -89,7 +127,7 @@
     }
   }
 
-  &.experience {
+  .experience {
     &__container{
       gap: 1rem;
     }
@@ -113,19 +151,76 @@
     &__data {
       gap: 0.25rem;
     }
+
+    &__title {
+      font-size: 0.875rem;
+    }
+  
+    &__studies {
+      font-size: 0.75rem;
+    }
+  
+    &__year {
+      font-size: 0.688rem;
+    }
   }
 
-  &.certificate {
+  .certificate {
     &__container{
       gap: 1rem;
     }
   }
 
-  &.skills {
+  .skills {
     &__name {
       margin-bottom: map-get($margenes, mb-1);
     }
   }
 
+  .social {
+    &__link {
+      font-size: 16pt;
+    }
+  }
 
+  .profile {
+    &_section {
+      .section-title {
+        font-size: 16pt;
+      }
+    }
+  }
+
+  .referees {
+    &__subtitle, &__contact {
+      font-size: 0.688rem;
+    }
+  
+    &__title {
+      font-size: 0.875rem;
+    }
+  }
 }
+
+/* body.scale-resume {
+  font-size: 0.813rem;
+  h1 {
+    font-size: 0.938rem;
+  }
+  h2 {
+    font-size: 0.938rem;
+  }
+  h3 {
+    font-size: 0.875rem;
+  }
+} */
+
+  /* $body-scale-resume:(
+  "h1-font-size": 0.938rem,
+  "h2-font-size": 0.938rem,
+  "h3-font-size": 0.875rem,
+  "normal-font-size": 0.813rem,
+  "small-font-size": 0.75rem,
+  "smaller-font-size": 0.688rem
+  );
+} */
